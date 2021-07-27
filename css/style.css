@@ -110,11 +110,21 @@ img {
 /* Герой */
 
 .hero {
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--dark-bg-color);
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30;
@@ -127,6 +137,7 @@ img {
 }
 .hero-btn {
   padding: 10px 32px;
+  display: inline-block;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -173,6 +184,30 @@ img {
 }
 .specifics-list .item:not(:last-child) {
   margin-right: 30px;
+}
+.specifics-list .item::before {
+  display: block;
+  margin-bottom: 30px;
+  content: '';
+  height: 120px;
+  background-color: var(--lightgray-bg-color);
+  border-radius: 4px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna_1.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/clock_1.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram_1.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut_1.svg);
 }
 
 /* Чем мы занимаемся */
